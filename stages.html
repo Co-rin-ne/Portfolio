@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Stages — Corinne Hurtaux</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <button class="menu-btn" id="menuBtn">☰ Menu</button>
+
+    <nav class="menu-lateral" id="menuLateral">
+        <button class="close-btn" id="closeBtn">×</button>
+        <ul>
+            <li><a href="index.html">🏠 Accueil</a></li>
+            <li><a href="presentation.html">👤 Présentation</a></li>
+            <li><a href="projets.html">💻 Mes Projets</a></li>
+            <li><a href="stages.html">📇 Mes Stages</a></li>
+            <li><a href="competences.html">🎯 Compétences</a></li>
+            <li><a href="certifications.html">🏆 Certifications</a></li>
+            <li><a href="veille.html">🔍 Veille Tech</a></li>
+            <li><a href="activites.html">🎭 Centres d'intérêt</a></li>
+        </ul>
+    </nav>
+
+    <main class="contenu">
+
+        <div class="page-header">
+            <h1>📇 Mes Stages</h1>
+            <p>Les expériences professionnelles réalisées au cours de ma formation</p>
+        </div>
+
+        <!-- ══════════════════════════════════════
+             STAGE SN1 — Service de sécurité, Gabon
+        ══════════════════════════════════════════ -->
+        <h2 class="annee-titre">🌸 Stage de première année — Service de sécurité de l'État</h2>
+
+        <section class="section-blanche" style="margin-bottom: 25px;">
+            <h2>🌍 Présentation de l'organisme d'accueil</h2>
+            <p>
+                Dans le cadre de ma première année de BTS SIO SLAM, j'ai effectué un stage de
+                <strong>six semaines</strong> au sein d'un <strong>service de sécurité de l'État gabonais</strong>,
+                principalement à <strong>Libreville</strong>, la capitale du Gabon, avec une mission
+                complémentaire à <strong>Franceville</strong> dans la province du Haut-Ogooué.
+            </p>
+            <p>
+                Cet environnement technique exigeant, ancré dans les enjeux stratégiques du pays, m'a permis
+                de développer des compétences concrètes en administration réseau, virtualisation et cybersécurité,
+                sous la tutelle de <strong>Mme AZIZET Emma Léa</strong>.
+            </p>
+        </section>
+
+        <div class="grille-stages">
+
+            <div class="carte-stage">
+                <h3>🖥️ Virtualisation — VMware ESXi</h3>
+                <p class="stage-dates">📍 Libreville, Gabon</p>
+                <p>
+                    Installation et configuration de <strong>VMware ESXi</strong> sur un serveur dédié.
+                    Création de l'architecture réseau virtuelle : 3 vSwitch (Management, Vidéo, Forensic),
+                    configuration des interfaces VMkernel et déploiement de 3 machines virtuelles
+                    sur des VLANs segmentés.
+                </p>
+            </div>
+
+            <div class="carte-stage">
+                <h3>🔒 Pare-feu — OPNsense</h3>
+                <p class="stage-dates">📍 Libreville, Gabon</p>
+                <p>
+                    Découverte et configuration d'<strong>OPNsense</strong>, pare-feu open source basé sur FreeBSD.
+                    Installation sur machine virtuelle, configuration des interfaces réseau, VLANs,
+                    règles de filtrage, gestion du NAT et segmentation des flux réseau.
+                </p>
+            </div>
+
+            <div class="carte-stage">
+                <h3>💻 Mise à jour d'une application web</h3>
+                <p class="stage-dates">📍 Libreville, Gabon</p>
+                <p>
+                    Correction d'une application de pointage (arrivées/départs/absences) codée en
+                    <strong>Python et JavaScript</strong>. Identification d'un bug sur la gestion
+                    des heures de départ, modification du code, tests en local et déploiement sur
+                    le réseau privé de l'organisme.
+                </p>
+            </div>
+
+            <div class="carte-stage">
+                <h3>📹 Service Vidéo & Surveillance</h3>
+                <p class="stage-dates">📍 Libreville, Gabon</p>
+                <p>
+                    Immersion dans le service vidéo chargé de la surveillance nationale.
+                    Utilisation de <strong>Zabbix</strong> pour le suivi des caméras, intervention sur
+                    site pour remplacement de matériel, et reconnaissance de plaques d'immatriculation
+                    via l'application <strong>LPR</strong>.
+                </p>
+            </div>
+
+            <div class="carte-stage">
+                <h3>📡 Service ROEM — Renseignement électromagnétique</h3>
+                <p class="stage-dates">📍 Libreville, Gabon</p>
+                <p>
+                    Découverte du Renseignement d'Origine Électromagnétique : interception de communications
+                    GSM, transcription et transmission au chef de secteur selon une chaîne de traitement
+                    coordonnée.
+                </p>
+            </div>
+
+            <div class="carte-stage">
+                <h3>🛰️ Mission à Franceville — Interception satellitaire</h3>
+                <p class="stage-dates">📍 Franceville, province du Haut-Ogooué</p>
+                <p>
+                    Déplacement pour découvrir l'interception de communications via
+                    <strong>téléphones Thurayas</strong> (bandes L et C). Utilisation de
+                    <strong>GeoMap</strong> pour la géolocalisation et le suivi des terminaux
+                    satellitaires en temps réel.
+                </p>
+            </div>
+
+        </div>
+
+        <section class="section-blanche" style="margin-top: 25px;">
+            <h2>🛠️ Technologies utilisées — SN1</h2>
+            <div style="display:flex; flex-wrap:wrap; gap:10px;">
+                <span class="tag">VMware ESXi</span>
+                <span class="tag">OPNsense</span>
+                <span class="tag">Python</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">VS Code</span>
+                <span class="tag">Zabbix</span>
+                <span class="tag">LPR</span>
+                <span class="tag">GeoMap</span>
+                <span class="tag">GSM / ROEM</span>
+                <span class="tag">Réseau / VLAN</span>
+            </div>
+        </section>
+
+        <div style="text-align:center; margin-top: 20px;">
+            <a href="documents/rapport-stage-sn1.pdf" target="_blank" class="btn-rapport">
+                📄 Consulter le rapport de stage SN1
+            </a>
+        </div>
+
+        <!-- ══════════════════════════════════════
+             STAGE SN2 — INA, Bry-sur-Marne
+        ══════════════════════════════════════════ -->
+        <h2 class="annee-titre">🌺 Stage de deuxième année — Institut National de l'Audiovisuel</h2>
+
+        <section class="section-blanche" style="margin-bottom: 25px;">
+            <h2>🎬 Présentation de l'organisme d'accueil</h2>
+            <p>
+                Dans le cadre de ma deuxième année de BTS SIO SLAM, j'ai effectué un stage de
+                <strong>six semaines</strong> à l'<strong>INA (Institut National de l'Audiovisuel)</strong>,
+                établissement public à caractère industriel et social fondé en 1975, dont le siège est situé
+                à <strong>Bry-sur-Marne</strong> (Île-de-France).
+            </p>
+            <p>
+                L'INA est l'une des premières ressources mondiales en matière de contenus audiovisuels numérisés.
+                Il est chargé de la conservation, de la valorisation et de la transmission du patrimoine audiovisuel
+                national. J'y ai intégré l'équipe de développement informatique, débutant le
+                <strong>12 janvier 2026</strong>.
+            </p>
+        </section>
+
+        <div class="grille-stages">
+
+            <div class="carte-stage">
+                <h3>🔐 Authentification LDAP</h3>
+                <p class="stage-dates">📍 INA, Bry-sur-Marne</p>
+                <p>
+                    Développement d'un module d'authentification via <strong>LDAP</strong> :
+                    validation des mots de passe, changement sécurisé avec politique de complexité
+                    (longueur minimale, caractères spéciaux, chiffres), et interface d'administration
+                    locale modernisée.
+                </p>
+            </div>
+
+            <div class="carte-stage">
+                <h3>🚀 Application full-stack Angular / Node.js</h3>
+                <p class="stage-dates">📍 INA, Bry-sur-Marne</p>
+                <p>
+                    Conception et développement d'une application <strong>full-stack</strong> :
+                    front-end <strong>Angular</strong> (avec Material UI) et back-end
+                    <strong>Node.js</strong>. Développement des endpoints d'API REST et
+                    intégration de l'authentification LDAP dans l'interface utilisateur.
+                </p>
+            </div>
+
+            <div class="carte-stage">
+                <h3>🐳 Déploiement Docker & Nginx</h3>
+                <p class="stage-dates">📍 INA, Bry-sur-Marne</p>
+                <p>
+                    Containerisation de l'application avec <strong>Docker</strong> et mise en place
+                    d'un reverse proxy <strong>Nginx</strong>. Configuration du middleware CORS
+                    pour les requêtes cross-origin et déploiement dans l'environnement de l'INA.
+                </p>
+            </div>
+
+            <div class="carte-stage">
+                <h3>🧪 Tests & Débogage API</h3>
+                <p class="stage-dates">📍 INA, Bry-sur-Marne</p>
+                <p>
+                    Tests des endpoints API avec <strong>Postman</strong>, identification et
+                    correction des bugs. Mise en place de scénarios de test couvrant les cas
+                    nominaux et les cas d'erreur pour garantir la robustesse de l'application.
+                </p>
+            </div>
+
+        </div>
+
+        <section class="section-blanche" style="margin-top: 25px;">
+            <h2>🛠️ Technologies utilisées — SN2</h2>
+            <div style="display:flex; flex-wrap:wrap; gap:10px;">
+                <span class="tag">Angular</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">PHP</span>
+                <span class="tag">LDAP</span>
+                <span class="tag">Docker</span>
+                <span class="tag">Nginx</span>
+                <span class="tag">REST API</span>
+                <span class="tag">GitLab</span>
+                <span class="tag">Postman</span>
+                <span class="tag">Material UI</span>
+            </div>
+        </section>
+
+        <div style="text-align:center; margin-top: 20px;">
+            <a href="documents/rapport-stage-sn2.pdf" target="_blank" class="btn-rapport">
+                📄 Consulter le rapport de stage SN2
+            </a>
+        </div>
+
+    </main>
+
+    <script src="js/menu.js"></script>
+</body>
+</html>

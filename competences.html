@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétences</title>
+
+    <link rel ="stylesheet" href="css/style.css">
+     
+  <style>
+    /* ── Page compétences ── */
+    .page-titre {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .page-titre h1 {
+      color: #c86291;
+      font-size: 38px;
+      font-family: 'Georgia', serif;
+      font-weight: normal;
+    }
+
+    .page-intro {
+      text-align: center;
+      color: #8b6f7a;
+      font-style: italic;
+      font-size: 16px;
+      margin-bottom: 60px;
+    }
+
+    /* ── Jardin de fleurs ── */
+    .jardin {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 50px 40px;
+      padding: 20px 0 60px;
+    }
+
+    /* ── Fleur ── */
+    .fleur-lien {
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+      width: 200px;
+      transition: transform 0.3s ease;
+    }
+
+    .fleur-lien:hover {
+      transform: translateY(-10px) scale(1.05);
+    }
+
+    .fleur-lien:hover .fleur-svg {
+      filter: drop-shadow(0 12px 20px rgba(255, 107, 157, 0.5));
+    }
+
+    /* Animation rotation douce au hover */
+    .fleur-lien:hover .petale-groupe {
+      animation: tourner 3s linear infinite;
+      transform-origin: center;
+    }
+
+    @keyframes tourner {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(360deg); }
+    }
+
+    /* Entrée des fleurs au chargement */
+    .fleur-lien {
+      animation: apparaitre 0.5s ease both;
+    }
+    .fleur-lien:nth-child(1) { animation-delay: 0.1s; }
+    .fleur-lien:nth-child(2) { animation-delay: 0.2s; }
+    .fleur-lien:nth-child(3) { animation-delay: 0.3s; }
+    .fleur-lien:nth-child(4) { animation-delay: 0.4s; }
+    .fleur-lien:nth-child(5) { animation-delay: 0.5s; }
+    .fleur-lien:nth-child(6) { animation-delay: 0.6s; }
+
+    @keyframes apparaitre {
+      from { opacity: 0; transform: translateY(30px) scale(0.8); }
+      to   { opacity: 1; transform: translateY(0)    scale(1); }
+    }
+
+    .fleur-svg {
+      width: 160px;
+      height: 160px;
+      transition: filter 0.3s;
+    }
+
+    .fleur-label {
+      color: #c86291;
+      font-size: 14px;
+      font-weight: 600;
+      text-align: center;
+      font-family: 'Georgia', serif;
+      line-height: 1.4;
+    }
+
+    /* ── Bouton téléchargement ── */
+    .btn-telecharger {
+      display: block;
+      width: fit-content;
+      margin: 0 auto 40px;
+      background: linear-gradient(135deg, #ff6b9d 0%, #ffa5c0 100%);
+      color: white;
+      padding: 14px 32px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+      box-shadow: 0 4px 15px rgba(255, 107, 157, 0.3);
+      transition: all 0.3s;
+    }
+
+    .btn-telecharger:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(255, 107, 157, 0.4);
+    }
+  </style>
+</head>
+    
+</head>
+<body>
+    <button class="menu-btn" id="menuBtn">  
+        Menu 
+    </button>
+
+    <nav class="menu-lateral" id="menuLateral">
+        <button class="close-btn" id="closeBtn">×</button>
+        <ul>
+            <li><a href="index.html">🏠 Accueil</a></li>
+            <li><a href="presentation.html">👤 Présentation</a></li>
+            <li><a href="projets.html">💻 Mes Projets</a></li>
+            <li><a href="stages.html">📇 Mes Stages</a></li>
+            <li><a href="competences.html">🎯 Compétences</a></li>
+            <li><a href="certifications.html">🏆 Certifications</a></li>
+            <li><a href="veille.html">🔍 Veille Tech</a></li>
+            <li><a href="activites.html">🎭 Centres d'intérêt</a></li>
+        </ul>
+    </nav>
+
+  <main class="contenu">
+
+    <div class="page-titre">
+      <h1>🌸 Mes Compétences</h1>
+    </div>
+    <p class="page-intro">
+      Clique sur une fleur pour découvrir la compétence et les projets associés
+    </p>
+
+    <!-- Jardin de fleurs -->
+    <div class="jardin">
+
+      <!-- Fleur 1 -->
+      <a href="compétences/compet1.html" class="fleur-lien">
+        <svg class="fleur-svg" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+          <g class="petale-groupe" transform-origin="80 80">
+            <!-- 6 pétales -->
+            <ellipse cx="80" cy="38" rx="18" ry="32" fill="#ffb6d9" opacity="0.85"/>
+            <ellipse cx="80" cy="38" rx="18" ry="32" fill="#ffb6d9" opacity="0.85" transform="rotate(60 80 80)"/>
+            <ellipse cx="80" cy="38" rx="18" ry="32" fill="#ff8fc0" opacity="0.75" transform="rotate(120 80 80)"/>
+            <ellipse cx="80" cy="38" rx="18" ry="32" fill="#ffb6d9" opacity="0.85" transform="rotate(180 80 80)"/>
+            <ellipse cx="80" cy="38" rx="18" ry="32" fill="#ff8fc0" opacity="0.75" transform="rotate(240 80 80)"/>
+            <ellipse cx="80" cy="38" rx="18" ry="32" fill="#ffb6d9" opacity="0.85" transform="rotate(300 80 80)"/>
+          </g>
+          <!-- Cœur central -->
+          <circle cx="80" cy="80" r="22" fill="#ff6b9d"/>
+          <text x="80" y="86" text-anchor="middle" font-size="20" fill="white">💾</text>
+        </svg>
+        <span class="fleur-label">Gérer le patrimoine informatique</span>
+      </a>
+
+      <!-- Fleur 2 -->
+      <a href="compétences/compet2.html" class="fleur-lien">
+        <svg class="fleur-svg" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+          <g class="petale-groupe" transform-origin="80 80">
+            <ellipse cx="80" cy="38" rx="18" ry="32" fill="#ffc8e0" opacity="0.85"/>
+            <ellipse cx="80" cy="38" rx="18" ry="32" fill="#ffa0cc" opacity="0.80" transform="rotate(60 80 80)"/>
+            <ellipse cx="80" cy="38" rx="18" ry="32" fill="#ffc8e0" opacity="0.85" transform="rotate(120 80 80)"/>
+            <ellipse cx="80" cy="38" rx="18" ry="32" fill="#ffa0cc" opacity="0.80" transform="rotate(180 80 80)"/>
+            <ellipse cx="80" cy="38" rx="18" ry="32" fill="#ffc8e0" opacity="0.85" transform="rotate(240 80 80)"/>
+            <ellipse cx="80" cy="38" rx="18" ry="32" fill="#ffa0cc" opacity="0.80" transform="rotate(300 80 80)"/>
+          </g>
+          <circle cx="80" cy="80" r="22" fill="#e05585"/>
+          <text x="80" y="86" text-anchor="middle" font-size="20" fill="white">🛠️</text>
+        </svg>
+        <span class="fleur-label">Répondre aux incidents et demandes d'assistance</span>
+      </a>
+
+      <!-- Fleur 3 -->
+      <a href="compétences/compet3.html" class="fleur-lien">
+        <svg class="fleur-svg" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+          <g class="petale-groupe" transform-origin="80 80">
+            <ellipse cx="80" cy="38" rx="18" ry="32" fill="#ffd4e8" opacity="0.90"/>
+            <ellipse cx="80" cy="38" rx="18" ry="32" fill="#ffadd0" opacity="0.80" transform="rotate(60 80 80)"/>
+            <ellipse cx="80" cy="38" rx="18" ry="32" fill="#ffd4e8" opacity="0.90" transform="rotate(120 80 80)"/>
+            <ellipse cx="80" cy="38" rx="18" ry="32" fill="#ffadd0" opacity="0.80" transform="rotate(180 80 80)"/>
+            <ellipse cx="80" cy="38" rx="18" ry="32" fill="#ffd4e8" opacity="0.90" transform="rotate(240 80 80)"/>
+            <ellipse cx="80" cy="38" rx="18" ry="32" fill="#ffadd0" opacity="0.80" transform="rotate(300 80 80)"/>
+          </g>
+          <circle cx="80" cy="80" r="22" fill="#ff6b9d"/>
+          <text x="80" y="86" text-anchor="middle" font-size="20" fill="white">🌐</text>
+        </svg>
+        <span class="fleur-label">Développer la présence en ligne de l'organisation</span>
+      </a>
+
+      <!-- Fleur 4 -->
+      <a href="compétences/compet4.html" class="fleur-lien">
+        <svg class="fleur-svg" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+          <g class="petale-groupe" transform-origin="80 80">
+            <ellipse cx="80" cy="38" rx="18" ry="32" fill="#ffb6d9" opacity="0.85"/>
+            <ellipse cx="80" cy="38" rx="18" ry="32" fill="#ff8fc0" opacity="0.75" transform="rotate(60 80 80)"/>
+            <ellipse cx="80" cy="38" rx="18" ry="32" fill="#ffb6d9" opacity="0.85" transform="rotate(120 80 80)"/>
+            <ellipse cx="80" cy="38" rx="18" ry="32" fill="#ff8fc0" opacity="0.75" transform="rotate(180 80 80)"/>
+            <ellipse cx="80" cy="38" rx="18" ry="32" fill="#ffb6d9" opacity="0.85" transform="rotate(240 80 80)"/>
+            <ellipse cx="80" cy="38" rx="18" ry="32" fill="#ff8fc0" opacity="0.75" transform="rotate(300 80 80)"/>
+          </g>
+          <circle cx="80" cy="80" r="22" fill="#c86291"/>
+          <text x="80" y="86" text-anchor="middle" font-size="20" fill="white">📋</text>
+        </svg>
+        <span class="fleur-label">Travailler en mode projet</span>
+      </a>
+
+      <!-- Fleur 5 -->
+      <a href="compétences/compet5.html" class="fleur-lien">
+        <svg class="fleur-svg" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+          <g class="petale-groupe" transform-origin="80 80">
+            <ellipse cx="80" cy="38" rx="18" ry="32" fill="#ffc8e0" opacity="0.90"/>
+            <ellipse cx="80" cy="38" rx="18" ry="32" fill="#ffadd0" opacity="0.80" transform="rotate(60 80 80)"/>
+            <ellipse cx="80" cy="38" rx="18" ry="32" fill="#ffc8e0" opacity="0.90" transform="rotate(120 80 80)"/>
+            <ellipse cx="80" cy="38" rx="18" ry="32" fill="#ffadd0" opacity="0.80" transform="rotate(180 80 80)"/>
+            <ellipse cx="80" cy="38" rx="18" ry="32" fill="#ffc8e0" opacity="0.90" transform="rotate(240 80 80)"/>
+            <ellipse cx="80" cy="38" rx="18" ry="32" fill="#ffadd0" opacity="0.80" transform="rotate(300 80 80)"/>
+          </g>
+          <circle cx="80" cy="80" r="22" fill="#ff6b9d"/>
+          <text x="80" y="86" text-anchor="middle" font-size="20" fill="white">🖥️</text>
+        </svg>
+        <span class="fleur-label">Mettre à disposition un service informatique</span>
+      </a>
+
+      <!-- Fleur 6 -->
+      <a href="compétences/compet6.html" class="fleur-lien">
+        <svg class="fleur-svg" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+          <g class="petale-groupe" transform-origin="80 80">
+            <ellipse cx="80" cy="38" rx="18" ry="32" fill="#ffd4e8" opacity="0.85"/>
+            <ellipse cx="80" cy="38" rx="18" ry="32" fill="#ffb6d9" opacity="0.80" transform="rotate(60 80 80)"/>
+            <ellipse cx="80" cy="38" rx="18" ry="32" fill="#ffd4e8" opacity="0.85" transform="rotate(120 80 80)"/>
+            <ellipse cx="80" cy="38" rx="18" ry="32" fill="#ffb6d9" opacity="0.80" transform="rotate(180 80 80)"/>
+            <ellipse cx="80" cy="38" rx="18" ry="32" fill="#ffd4e8" opacity="0.85" transform="rotate(240 80 80)"/>
+            <ellipse cx="80" cy="38" rx="18" ry="32" fill="#ffb6d9" opacity="0.80" transform="rotate(300 80 80)"/>
+          </g>
+          <circle cx="80" cy="80" r="22" fill="#e05585"/>
+          <text x="80" y="86" text-anchor="middle" font-size="20" fill="white">🚀</text>
+        </svg>
+        <span class="fleur-label">Organiser son développement professionnel</span>
+      </a>
+
+    </div>
+
+    <!-- Bouton téléchargement grille -->
+    <a href="documents/tableau-competences.pdf" target="_blank" class="btn-telecharger">
+      📄 Tableau de compétences
+    </a>
+
+  </main>
+
+  <script src="js/menu.js"></script>
+</body>
+</html> 
+</body>
+</html>

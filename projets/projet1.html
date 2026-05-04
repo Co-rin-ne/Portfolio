@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio BTS SIO - Projet 1</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Navigation bas de page */
+        .navigation-projet {
+            text-align: center;
+            margin-top: 40px;
+            padding: 30px 0;
+        }
+
+        .btn-retour-bas {
+            display: inline-block;
+            background: linear-gradient(135deg, #ff6b9d 0%, #ffa5c0 100%);
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 500;
+            transition: all 0.3s;
+            box-shadow: 0 6px 20px rgba(255, 107, 157, 0.3);
+        }
+
+        .btn-retour-bas:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(255, 107, 157, 0.4);
+        }
+    </style>
+
+</head>
+<body>
+    
+    <button class="menu-btn" id="menuBtn">☰ Menu</button>
+
+    <nav class="menu-lateral" id="menuLateral">
+        <button class="close-btn" id="closeBtn">×</button>
+        <ul>
+            <li><a href="../index.html">🏠 Accueil</a></li>
+            <li><a href="../presentation.html">👤 Présentation</a></li>
+            <li><a href="../projets.html">💻 Mes Projets</a></li>
+            <li><a href="../stages.html">📇 Mes Stages</a></li>
+            <li><a href="../competences.html">🎯 Compétences</a></li>
+            <li><a href="../certifications.html">🏆 Certifications</a></li>
+            <li><a href="../veille.html">🔍 Veille Tech</a></li>
+            <li><a href="../activites.html">🎭 Centres d'intérêt</a></li>
+        </ul>
+    </nav>
+
+    <main class="contenu">
+
+        <!-- En-tête du projet -->
+        <div class="header-projet">
+            <h1>Mon CV numérique</h1>
+            <p class="sous-titre-projet" style="text-align: center;"> Projet de découverte HTML </p>
+        </div>
+
+        <!-- Contexte du projet -->
+        <section class="section-projet">
+            <h2>📋 Contexte du projet</h2>
+            <p>
+            Dans le cadre de ma formation BTS SIO SLAM, j'ai réalisé un CV numérique 
+            en HTML et CSS lors de mon apprentissage du développement web front-end. 
+            L'objectif était de créer une page web professionnelle et responsive 
+            présentant mon parcours, mes compétences et mes expériences de manière 
+            structurée et visuellement attractive.
+            </p>
+            <p>
+            Ce projet m'a permis de découvrir les fondamentaux du développement web : 
+            structuration HTML sémantique, mise en forme avec CSS, et adaptation 
+            responsive pour différents supports (desktop, tablette, mobile). C'était 
+            ma première réalisation concrète en tant que développeuse web.
+            </p>
+        </section>
+
+        <!-- Mission et réalisations -->
+        <section class="section-projet">
+            <h2>🎯 Mission et réalisations</h2>
+
+            <ul class="liste-realisations">
+                <li>Découverte de l'utilisation de HTML</li>
+                <li>Découverte de l'utilisation de CSS</li>
+                <li>Mis en page avec image</li>
+                <li>Apprentissage de la structuration HTML/CSS</li>
+            </ul>
+        </section>
+
+        <!-- Compétences développées -->
+        <section class="section-projet competences-section">
+            <h2>💡 Compétences développées</h2>
+            <div class="grille-competences-detail">
+                <div class="competence-item">
+                    <div class="competence-numero">B1.1</div>
+                    <div class="competence-contenu">
+                        <h4>Développer la présence en ligne de l'organisation</h4>
+                        <p>
+                    J'ai créé une page web professionnelle servant de vitrine numérique. 
+                    Ce CV en ligne permet une présence web accessible 24h/24 et facilite 
+                    le partage de mon profil auprès de recruteurs et d'entreprises.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="competence-item">
+                    <div class="competence-numero">B1.2</div>
+                    <div class="competence-contenu">
+                        <h4>Gérer le patrimoine informatique - Structures HTML</h4>
+                        <p>
+                    J'ai structuré le document HTML de manière sémantique en utilisant 
+                    les balises appropriées (header, section, article, footer) pour 
+                    organiser l'information de façon logique et accessible. Cette 
+                    structuration facilite la maintenance et l'évolution du code.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="competence-item">
+                    <div class="competence-numero">B1.3</div>
+                    <div class="competence-contenu">
+                        <h4>Répondre aux incidents et aux demandes d'assistance - Design responsive</h4>
+                        <p>
+                        J'ai développé une interface responsive qui s'adapte automatiquement 
+                        à tous les supports (ordinateur, tablette, smartphone) en utilisant 
+                        les media queries CSS. Cela garantit une expérience utilisateur 
+                        optimale quel que soit l'appareil utilisé.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Langages et logiciels -->
+        <section class="section-projet">
+            <h2>🛠️ Langages et logiciels utilisés</h2>
+            
+            <div class="techno-container">
+                <div class="techno-categorie">
+                    <h3>Langages de programmation</h3>
+                    <div class="tags-techno">
+                        <span class="tag-techno langage">HTML</span>
+                        <span class="tag-techno langage">CSS</span>
+                    </div>
+                </div>
+
+
+                <div class="techno-categorie">
+                    <h3>Outils et logiciels</h3>
+                    <div class="tags-techno">
+                        <span class="tag-techno outil">VS Code</span>
+                        <span class="tag-techno outil">GitHub</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Difficultés et solutions -->
+        <section class="section-projet">
+            <h2>⚠️ Difficultés rencontrées et solutions apportées</h2>
+            <div class="difficulte-box">
+                <h4>Difficulté 1</h4>
+                <p>
+                    <strong>Problème :</strong> J'ai rencontré des difficultés pour positionner 
+                    correctement ma photo de profil sur la page. L'image ne s'alignait pas 
+                    comme souhaité avec le texte, créant un rendu peu professionnel avec des 
+                    décalages et des espaces indésirables.
+                </p>
+                        <p>
+            <strong>Solution :</strong> Après plusieurs recherches et tests, j'ai découvert 
+            les propriétés CSS Flexbox qui permettent un alignement flexible des éléments. 
+            J'ai utilisé <code>display: flex</code> sur le conteneur parent, puis 
+            <code>align-items</code> et <code>justify-content</code> pour positionner 
+            l'image et le texte côte à côte de manière harmonieuse. J'ai également ajouté 
+            des marges et du padding pour gérer précisément les espacements.
+        </p>
+            </div>
+            <div class="difficulte-box">
+                <h4>Difficulté 2</h4>
+                <p>
+                    Mentionne une autre problématique et la méthodologie que tu as 
+                    suivie pour trouver une solution. Montre ton esprit d'analyse 
+                    et ta capacité à résoudre des problèmes.
+                </p>
+            </div>
+        </section>
+
+        <!-- Résultats et bilan -->
+        <section class="section-projet">
+            <h2>✅ Résultats et bilan</h2>
+            <p>
+                    À l'issue de ce projet, j'ai réussi à créer un CV numérique entièrement fonctionnel 
+                    et responsive. La page s'affiche correctement sur tous les supports (ordinateur, 
+                    tablette, smartphone) et présente mes informations de manière claire et professionnelle. 
+                    L'image de profil est bien intégrée et s'harmonise parfaitement avec le reste de la 
+                    mise en page.
+                </p>
+                <p>
+                    Ce projet m'a permis de maîtriser les fondamentaux du développement web front-end : 
+                    structuration HTML sémantique, mise en forme CSS, gestion du responsive design avec 
+                    les media queries, et manipulation du positionnement avec Flexbox. J'ai également 
+                    développé ma capacité à rechercher des solutions de manière autonome face aux 
+                    problèmes techniques rencontrés.
+                </p>
+                <p>
+                    <strong>Ce que j'ai appris :</strong> Au-delà des compétences techniques, ce projet 
+                    m'a fait comprendre l'importance de tester régulièrement son travail sur différents 
+                    supports, d'optimiser les ressources (images) pour améliorer les performances, et de 
+                    structurer son code de manière propre pour faciliter la maintenance future. Avec du 
+                    recul, j'aurais planifié dès le départ la version mobile pour éviter de devoir 
+                    restructurer mon code par la suite.
+                </p>
+                <p>
+                    <strong>Évolutions possibles :</strong> Si je devais améliorer ce projet, j'ajouterais 
+                    des animations CSS subtiles pour rendre la page plus interactive, j'intégrerais un 
+                    formulaire de contact fonctionnel, et j'optimiserais encore davantage le code en 
+                    utilisant des variables CSS pour faciliter les modifications de couleurs et d'espacements.
+                </p>
+        </section>
+
+    </section>
+
+        <!-- Images/Captures d'écran (optionnel) -->
+        <section class="section-projet">
+            <h2>📸 Aperçu du projet</h2>
+            <div class="galerie-images">
+                <div class="image-placeholder">
+                    <img src="../images/img1.png" alt="Aperçu du projet CV numérique" style="max-width: 100%; height: auto;">
+                </div>
+                <div class="image-placeholder">
+                    <img src="../images/img2.png" alt="Aperçu du projet CV numérique" style="max-width: 100%; height: auto;">
+                </div>
+                <div class="image-placeholder">
+                    <img src="../images/img3.png" alt="Aperçu du projet CV numérique" style="max-width: 100%; height: auto;">
+                </div>
+            </div>
+        </section>
+
+        <!-- Bouton retour en bas -->
+        <div class="navigation-projet">
+            <a href="../projets.html" class="btn-retour-bas">← Retour aux projets</a>
+        </div>
+
+    </main>
+
+    <script src="../js/menu.js"></script>
+</body>
+</html>
