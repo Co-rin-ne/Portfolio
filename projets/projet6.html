@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SwimBeer — E-commerce — Corinne Hurtaux</title>
+    <title>SupaNotes — Application mobile — Corinne Hurtaux</title>
     <link rel="stylesheet" href="../css/style.css">
     <style>
         .navigation-projet { text-align:center; margin-top:40px; padding:30px 0; }
@@ -39,128 +39,179 @@
         <a href="../projets.html" class="btn-retour">← Retour aux projets</a>
 
         <div class="header-projet">
-            <div class="numero-projet-detail">05</div>
-            <h1>SwimBeer — E-commerce</h1>
-            <p class="sous-titre-projet">Création d'une boutique en ligne de maillots de bain — Camp de formation</p>
+            <div class="numero-projet-detail">06</div>
+            <h1>SupaNotes — Application mobile</h1>
+            <p class="sous-titre-projet">Application de prise de notes en Flutter connectée à Supabase</p>
         </div>
 
+        <!-- Contexte -->
         <section class="section-projet">
             <h2>📋 Contexte du projet</h2>
             <p>
-                Dans le cadre d'un camp de formation intensif (BTS SIO SLAM), j'ai réalisé la création
-                d'une boutique en ligne fictive nommée <strong>SwimBeer</strong>, dédiée à la vente
-                de maillots de bain tendance et audacieux.
+                Dans le cadre de ma deuxième année de BTS SIO SLAM, j'ai développé individuellement
+                <strong>SupaNotes</strong>, une application mobile de prise de notes réalisée avec
+                <strong>Flutter (Dart)</strong>. L'objectif était de concevoir une application complète,
+                depuis l'interface utilisateur jusqu'à la gestion des données en base, en autonomie totale.
             </p>
             <p>
-                L'objectif de ce projet était de concevoir et développer un site e-commerce complet
-                avec une interface soignée, une navigation intuitive et une présentation attractive
-                des produits. Ce projet a été réalisé dans un temps limité, simulant les conditions
-                d'un projet professionnel réel.
+                L'application est connectée à <strong>Supabase</strong>, une plateforme backend open source,
+                qui assure le stockage des notes et la sécurité des accès grâce au système
+                <strong>Row Level Security (RLS)</strong>. Chaque note est associée à son utilisateur
+                et gérée via des opérations CRUD complètes (SELECT, INSERT, UPDATE, DELETE).
             </p>
         </section>
 
+        <!-- Mission -->
         <section class="section-projet">
             <h2>🎯 Mission et réalisations</h2>
             <ul class="liste-realisations">
-                <li>Conception de la charte graphique et de l'identité visuelle de SwimBeer</li>
-                <li>Développement de la page d'accueil avec présentation de la boutique</li>
-                <li>Création de la galerie produits avec mise en page responsive</li>
-                <li>Intégration des éléments de navigation (menu, catégories, panier)</li>
-                <li>Optimisation de l'interface pour une expérience utilisateur fluide</li>
+                <li>Développement de l'interface mobile avec Flutter (Dart) et le design Cupertino</li>
+                <li>Conception de l'AppBar et des cards pour l'affichage individuel des notes</li>
+                <li>Connexion à Supabase et configuration de la base de données</li>
+                <li>Mise en place du Row Level Security (RLS) pour sécuriser les accès par utilisateur</li>
+                <li>Implémentation des opérations CRUD : création, lecture, modification et suppression de notes</li>
+                <li>Gestion des attributs de chaque note : titre, contenu et date</li>
             </ul>
         </section>
 
+        <!-- Compétences -->
         <section class="section-projet competences-section">
             <h2>💡 Compétences développées</h2>
             <div class="grille-competences-detail">
+
                 <div class="competence-item">
                     <div class="competence-numero">B1.1</div>
                     <div class="competence-contenu">
-                        <h4>Développer la présence en ligne de l'organisation</h4>
+                        <h4>Gérer le patrimoine informatique</h4>
                         <p>
-                            J'ai créé une boutique en ligne complète avec une identité visuelle
-                            forte. Le site SwimBeer permet à une marque fictive d'avoir une
-                            présence web professionnelle et attractive.
+                            J'ai structuré et sécurisé les données utilisateur dans Supabase en configurant
+                            des règles RLS garantissant que chaque utilisateur n'accède qu'à ses propres notes.
+                            La base de données est organisée avec des attributs clairs et des droits d'accès maîtrisés.
                         </p>
                     </div>
                 </div>
+
                 <div class="competence-item">
                     <div class="competence-numero">B1.4</div>
                     <div class="competence-contenu">
                         <h4>Travailler en mode projet</h4>
                         <p>
-                            Réalisé sous contrainte de temps lors du camp de formation, ce projet
-                            m'a appris à prioriser les fonctionnalités, à gérer mon temps efficacement
-                            et à livrer un résultat fonctionnel dans les délais impartis.
+                            Ce projet individuel m'a amenée à planifier seule les différentes étapes :
+                            conception de l'interface, choix des technologies, intégration du backend,
+                            tests et corrections. J'ai géré les priorités et les délais de manière autonome.
                         </p>
                     </div>
                 </div>
+
+                <div class="competence-item">
+                    <div class="competence-numero">B1.5</div>
+                    <div class="competence-contenu">
+                        <h4>Mettre à disposition un service informatique</h4>
+                        <p>
+                            L'application fonctionne de manière autonome sur mobile, avec une synchronisation
+                            en temps réel via Supabase. Les données sont accessibles depuis n'importe quel
+                            appareil grâce au backend cloud.
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </section>
 
+        <!-- Technologies -->
         <section class="section-projet">
-            <h2>🛠️ Technologies utilisées</h2>
+            <h2>🛠️ Langages et logiciels utilisés</h2>
             <div class="techno-container">
+
                 <div class="techno-categorie">
-                    <h3>Front-end</h3>
-                    <div class="tags">
-                        <span class="tag">HTML</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
+                    <h3>Langages de programmation</h3>
+                    <div class="tags-techno">
+                        <span class="tag-techno langage">Dart</span>
+                        <span class="tag-techno langage">Flutter</span>
                     </div>
                 </div>
+
+                <div class="techno-categorie">
+                    <h3>Backend & Base de données</h3>
+                    <div class="tags-techno">
+                        <span class="tag-techno langage">Supabase</span>
+                        <span class="tag-techno langage">PostgreSQL</span>
+                        <span class="tag-techno langage">RLS</span>
+                    </div>
+                </div>
+
                 <div class="techno-categorie">
                     <h3>Outils</h3>
-                    <div class="tags">
-                        <span class="tag">VS Code</span>
-                        <span class="tag">Git</span>
+                    <div class="tags-techno">
+                        <span class="tag-techno outil">VS Code</span>
+                        <span class="tag-techno outil">GitHub</span>
                     </div>
                 </div>
+
             </div>
         </section>
 
+        <!-- Difficultés -->
         <section class="section-projet">
-            <h2>⚠️ Difficultés rencontrées</h2>
+            <h2>⚠️ Difficultés rencontrées et solutions apportées</h2>
             <div class="difficulte-box">
-                <h4>Contrainte de temps</h4>
+                <h4>Difficulté 1 — Configuration du RLS sur Supabase</h4>
                 <p>
-                    <strong>Problème :</strong> Réaliser un site e-commerce complet et soigné
-                    dans le cadre d'un camp de formation intensif avec un délai très court.
+                    <strong>Problème :</strong> La mise en place du Row Level Security n'était pas intuitive.
+                    Les règles d'accès mal configurées empêchaient les utilisateurs de lire ou modifier leurs propres notes.
                 </p>
                 <p>
-                    <strong>Solution :</strong> J'ai priorisé les fonctionnalités essentielles,
-                    commencé par la structure HTML puis le CSS, et utilisé des techniques CSS
-                    modernes (flexbox, grid) pour aller plus vite sur la mise en page.
+                    <strong>Solution :</strong> Après lecture de la documentation Supabase, j'ai correctement
+                    défini les politiques RLS en liant chaque enregistrement à l'identifiant de l'utilisateur connecté
+                    (auth.uid()), ce qui a résolu les problèmes d'accès.
+                </p>
+            </div>
+            <div class="difficulte-box">
+                <h4>Difficulté 2 — Rafraîchissement de l'interface en temps réel</h4>
+                <p>
+                    <strong>Problème :</strong> Après ajout ou suppression d'une note, la liste ne se mettait
+                    pas à jour automatiquement dans l'interface Flutter.
+                </p>
+                <p>
+                    <strong>Solution :</strong> J'ai mis en place un mécanisme de rechargement de l'état
+                    de l'application après chaque opération CRUD, assurant une synchronisation immédiate
+                    entre la base de données et l'affichage.
                 </p>
             </div>
         </section>
 
+        <!-- Bilan -->
         <section class="section-projet">
             <h2>✅ Résultats et bilan</h2>
             <p>
-                Ce projet de formation intensive m'a permis de consolider mes compétences en
-                développement front-end dans un contexte de contrainte de temps. J'ai livré
-                un site e-commerce fonctionnel avec une identité visuelle cohérente et
-                une navigation claire.
+                L'application SupaNotes est pleinement fonctionnelle : les utilisateurs peuvent créer,
+                consulter, modifier et supprimer leurs notes depuis leur mobile. La sécurité des données
+                est assurée par le RLS, garantissant une isolation totale entre les comptes.
             </p>
             <p>
-                <strong>Ce que j'ai appris :</strong> La gestion du stress et des priorités
-                dans un projet sous contrainte, ainsi que l'importance de partir d'une structure
-                solide avant de soigner les détails visuels.
+                Ce projet m'a permis de découvrir le développement mobile avec Flutter et Dart,
+                et de prendre en main un backend moderne avec Supabase. J'ai renforcé ma compréhension
+                des bases de données, de la sécurité des accès et de l'architecture d'une application
+                mobile complète.
+            </p>
+            <p>
+                <strong>Évolutions possibles :</strong> Ajout d'un système d'authentification complet,
+                d'une fonctionnalité de recherche dans les notes, et d'une synchronisation hors ligne.
             </p>
         </section>
 
+        <!-- Images -->
         <section class="section-projet">
             <h2>📸 Aperçu du projet</h2>
             <div class="galerie-images">
                 <div class="image-placeholder">
-                    <img src="../images/swim1.png" alt="Aperçu SwimBeer accueil" style="max-width:100%;height:auto;border-radius:10px;">
+                    <img src="../images/supanotes1.png" alt="SupaNotes aperçu 1" style="max-width:100%;height:auto;border-radius:10px;">
                 </div>
                 <div class="image-placeholder">
-                    <img src="../images/swim2.png" alt="Aperçu SwimBeer produits" style="max-width:100%;height:auto;border-radius:10px;">
+                    <img src="../images/supanotes2.png" alt="SupaNotes aperçu 2" style="max-width:100%;height:auto;border-radius:10px;">
                 </div>
                 <div class="image-placeholder">
-                    <img src="../images/swim3.png" alt="Aperçu SwimBeer détail" style="max-width:100%;height:auto;border-radius:10px;">
+                    <img src="../images/supanotes3.png" alt="SupaNotes aperçu 3" style="max-width:100%;height:auto;border-radius:10px;">
                 </div>
             </div>
         </section>
